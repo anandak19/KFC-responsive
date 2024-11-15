@@ -678,11 +678,16 @@ main {
   .links-section {
     ul {
       list-style-type: none;
+      padding: 0;
     }
-    p,
+    p{
+      font-family: var(--normal-font);
+      margin-bottom: 0;
+      padding: 0 0 8px 0;
+    }
     ul li {
       font-family: var(--normal-font);
-      padding-bottom: 8px;
+      padding: 8px 0;
     }
   }
 }
@@ -691,6 +696,17 @@ main {
   .footer-row-one .footer-links-wrapper {
     flex-direction: column;
     gap: 0;
+
+    .links-section {
+      p, ul li {
+        padding: 1.8rem;
+        border-top: 1px solid var(--dull-black);
+        border-bottom: 1px solid var(--dull-black);
+      }
+      .accordion-button{
+        background-color: #494949;
+      }
+    }
   }
   /* brand image  */
   .footer-row-one .brand-image {
