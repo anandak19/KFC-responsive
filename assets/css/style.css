@@ -84,6 +84,27 @@ main {
   }
 }
 
+@media (max-width: 992px) {
+  .header-section .location {
+    padding: 4px 2vw;
+  }
+
+  .location-info {
+    gap: 23px;
+    p {
+      font-size: var(--small-font);
+    }
+    p i {
+      margin-right: 10px;
+    }
+  
+    button {
+      padding: 3px 19px;
+      text-wrap: nowrap;
+    }
+  }
+}
+
 .kfc-navbar {
   padding: 18px 0;
   border-top: 1px solid #d6d6d6;
@@ -467,6 +488,7 @@ main {
 .line-styles,
 .section-title {
   padding: 0 1vw;
+
 }
 
 .section-title {
@@ -511,14 +533,25 @@ main {
 
 
 @media (max-width: 992px) {
-  .section-title {
-    margin: 4vh 9vw 1vw 0;
+  .offers-section {
+    margin-top: 14vh;
+    padding: 0 0 0vw 2vw;
+  }
+  .line-styles, .section-title {
+    margin: 3vh 0vw 0vw 0vw;
+    display: flex;
+    justify-content: center;
     .title {
       h2 {
-        font-size: 1.4rem;
+        font-size: 2.1rem;
       }
     }
   }
+  .section-title{
+    flex-direction: column;
+    gap: 18px;
+  }
+
 }
 
 /* slider  */
@@ -627,6 +660,49 @@ main {
   }
 }
 
+@media (max-width: 992px) {
+  .cards-slider {
+    gap: 2.6rem;
+    padding: 18px 14px 84px 0;
+  }
+  .cards-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* card  in small screen */
+  .cards-slider .offer-card {
+    height: 36rem;
+    width: 26rem;
+    .offer-image {
+      height: 59%;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .offer-details {
+      padding: 0px 18px 6px 18px;
+      .details {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+  
+      .more-apply {
+        margin-top: 0;
+        a {
+          font-size: 1.3rem;
+          padding: 4px 0;
+        }
+        button {
+          padding: 8px 31px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
 /* offers section end  */
 /* footer section start  */
 .footer-section {
@@ -703,9 +779,6 @@ main {
         border-top: 1px solid var(--dull-black);
         border-bottom: 1px solid var(--dull-black);
       }
-      .accordion-button{
-        background-color: #494949;
-      }
     }
   }
   /* brand image  */
@@ -714,7 +787,7 @@ main {
     justify-content: center;
     margin: 4.2rem 0;
     img {
-      width: 23%;
+      width: 17%;
     }
   }
 }
